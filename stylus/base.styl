@@ -1,0 +1,184 @@
+// .container
+//   width 680px
+//   height 400px
+//   background url(../img/bg.jpg) no-repeat
+//   display block
+html
+  background url(../../src/img/bg.png)
+  body
+    width 640px
+    height 267px
+    display block
+    margin 0 auto
+    top 50%
+    margin-top (267 / 2)px
+    text-align center
+    span.details
+      font-size 13px
+      margin-top 20px
+      display block
+      color #565656
+      span.amp
+       font-family Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif
+       font-size 110%
+       font-style italic
+      a,
+      a:visited
+        color #77CCA4
+        text-decoration none
+        &:hover
+          color darken(#77CCA4, 30%)
+.mejs-inner
+  position relative
+  width inherit
+  height inherit
+  div
+  a
+  span
+  button
+  img 
+    margin 0
+    padding 0
+    border none
+    outline none
+
+.mejs-container 
+  position relative
+  background #000000
+
+.me-plugin
+  position absolute 
+
+.mejs-container-fullscreen .mejs-mediaelement
+.mejs-container-fullscreen video
+.mejs-embed
+.mejs-embed body
+.mejs-mediaelement 
+  width 100%
+  height 100%
+
+.mejs-embed
+.mejs-embed body 
+  margin 0
+  padding 0
+  overflow hidden
+
+.mejs-container-fullscreen 
+  position fixed
+  left 0
+  top 0
+  right 0
+  bottom 0
+  overflow hidden
+  z-index 1000
+
+.mejs-background
+.mejs-mediaelement
+.mejs-poster
+.mejs-overlay 
+  position absolute
+  top 0;
+  left 0;
+
+.mejs-poster
+  img
+    display block
+
+//Controls
+.mejs-container
+  .mejs-controls
+    height 50px
+    width 490px
+    display block
+    position absolute
+    top 50%
+    left 50%
+    margin -25px 0px 0px -250px
+    box-shadow 1px 1px 3px rgba(#000000, 0.7), inset 0px 1px 2px rgba(255,255,255,0.2), inset 0px 25px 0px rgba(255,255,255,0.05)
+    -webkit-border-radius 5px
+    -moz-border-radius 5px
+    border 1px solid #000000
+    background-image -webkit-linear-gradient(rgba(lighten(#262a31,30%),0.8), rgba(darken(#262a31,30%),0.8))
+    background-image -moz-linear-gradient(top, rgba(lighten(#262a31,30%),0.8), rgba(darken(#262a31,30%),0.8))
+    .mejs-button
+      button
+        display block
+        float left
+        cursor pointer
+        background transparent url(../img/player_sprite.png)
+        width 14px
+        height 22px
+      &.mejs-play,
+      &.mejs-pause
+        display block
+        float left
+        padding 14px 16px 14px 20px
+        border-right rgba(#000000, 0.5) 1px solid
+      &.mejs-play
+        button
+          background-position 0px 0px
+      &.mejs-pause
+        button
+          background-position -14px 0px
+      &.mejs-volume-button
+        display block
+        float left
+        padding 14px 12px 14px 12px
+        border-left 1px solid rgba(#ffffff, 0.15)
+        button
+          width 25px
+        &.mejs-mute
+          button
+            background-position -28px 0px
+        &.mejs-unmute
+          button
+            background-position -53px 0px
+      &.mejs-fullscreen-button
+        display block
+        float left
+        margin 14px 12px 14px 12px
+        button
+          background-position -78px 0px
+          width 22px
+    .mejs-horizontal-volume-slider
+      display none
+    .mejs-time-rail
+      position relative
+      margin 20px 12px 14px 0px
+      border 1px solid #000000
+      -webkit-border-radius 5px
+      -moz-border-radius 5px
+      float left
+      cursor pointer
+      overflow hidden
+      height 9px
+      width 268px
+      span
+        display block
+        -webkit-border-radius 5px
+        -moz-border-radius 5px
+        height 9px
+        width 268px
+        position absolute
+        top 0
+        left 0
+        &.mejs-time-loaded
+          background-color #2b3036
+          display block
+        &.mejs-time-current
+          background-color #9bc908
+          display block
+        &.mejs-time-float
+          display none
+        &.mejs-time-float-current
+          display none
+    .mejs-time
+      display block
+      float left
+      margin 17px 12px 14px 12px
+      span.mejs-currenttime
+        float left
+        color #ffffff
+        font-size 12px
+        font-weight 700
+        text-shadow 1px 1px 0px #000000

@@ -1,0 +1,47 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>umar irshad video player</title>
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/src/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  <script src="js/mediaelement-and-player.min.js"></script>
+  <script type="text/javascript">// <![CDATA[
+    $(document).ready(function() {
+      $('video').mediaelementplayer({
+        alwaysShowControls: true,
+        videoVolume: 'horizontal',
+        features: ['playpause','volume','progress','current','fullscreen']
+      });
+    });
+  // ]]></script>
+
+</head>
+<body>
+  <video width="640" height="267" poster="media/cars.png">
+    <source src="media/cars.mp4" type="video/mp4">
+  </video>
+  <span class="details">Design originally dribbbled by <a href="http://dribbble.com/shots/527613-Freebie-Video-Player-PSD">Umar Irshad</a>, built with <a href="http://mediaelementjs.com/">MediaElement.js</a><br/><span class="amp">&amp;</span> tested in Chrome v18, Firefox v11 <span class="amp">&amp;</span> Safari v5.1.5</span>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11828466-1']);
+  _gaq.push(['_setDomainName', 'maximmcnair.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
